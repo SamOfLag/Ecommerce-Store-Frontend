@@ -1,0 +1,9 @@
+{
+    "extends": ["plugin:react/recommended", "plugin:prettier/recommended"],
+    "plugins": ["react"],
+    "rules": {
+      "react/react-in-jsx-scope": "off", // Not needed for newer React versions
+      "prettier/prettier": "error" // Enforce Prettier rules as linting errors
+    }
+  }
+  

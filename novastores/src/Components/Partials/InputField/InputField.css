@@ -1,0 +1,10 @@
+.input-group-text {
+    background: transparent;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  .input-group input {
+    border-right: none;
+  }
+  
