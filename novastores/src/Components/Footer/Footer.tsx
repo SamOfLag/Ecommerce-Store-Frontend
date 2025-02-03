@@ -1,4 +1,5 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import CustomButton from '../Partials/Button/Button';
 // import { FaApple } from "react-icons/fa";
 
 const Footer = () => {
@@ -54,50 +55,54 @@ const Footer = () => {
           <Col md={3} className="mb-4">
             <h6 className="fw-bold text-uppercase">Download App</h6>
             <Button variant="light" className="d-block mb-2">
-              Get it now on <br />Google Play
+              Get it now on <br />
+              Google Play
             </Button>
             <Button variant="light" className="d-block">
               {/* <FaApple size={50}/> */}
-              Get it now on <br />App Store
+              Get it now on <br />
+              App Store
             </Button>
           </Col>
 
           {/* Popular Tags */}
-          <Col md={2} className="mb-4">
+          <Col md={2} className="mb-1">
             <h6 className="fw-bold text-uppercase">Popular Tag</h6>
-            <div className="d-flex flex-wrap gap-2">
-              {[
-                "Game",
-                "iPhone",
-                "Macbook",
-                "SSD",
-                "Graphics Card",
-                "TV",
-                "Asus Laptops",
-                "Power Bank",
-                "Smart TV",
-                "Speaker",
-                "Tablet",
-                "Microwave",
-                "Samsung",
-              ].map((tag) => (
-                <span
-                  key={tag}
-                  className="badge bg-secondary text-uppercase text-light"
-                >
-                  {tag}
-                </span>
-              ))}
+            <div className="mb-4">
+              <div className="d-flex flex-wrap">
+                {[
+                  'Game',
+                  'iPhone',
+                  'TV',
+                  'Asus Laptops',
+                  'Macbook',
+                  'SSD',
+                  'Graphics Card',
+                  'Power Bank',
+                  'Smart TV',
+                  'Speaker',
+                  'Tablet',
+                  'Microwave',
+                  'Samsung',
+                ].map((tag, index) => (
+                  <CustomButton
+                    key={index}
+                    variant="outline-secondary"
+                    size="sm"
+                    className="me-2 mb-2 text-white border-white"
+                  >
+                    {tag}
+                  </CustomButton>
+                ))}
+              </div>
             </div>
           </Col>
         </Row>
-              <hr />
+        <hr />
         {/* Footer Bottom */}
         <Row className="mt-4">
           <Col className="text-center">
-            <p className="mb-0">
-              Novastore - © 2025. Built by Samson Oladapo
-            </p>
+            <p className="mb-0">Novastore - © 2025. Built by Samson Oladapo</p>
           </Col>
         </Row>
       </Container>

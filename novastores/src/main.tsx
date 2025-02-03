@@ -6,11 +6,14 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './styles/global.css';
 import App from './App.tsx';
 import { AuthProvider } from './Contexts/AuthContext.tsx';
+import { ProductsProvider } from './Contexts/ProductsContext.tsx';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <AuthProvider>
-    <App />
+      <ProductsProvider>
+        <App />
+      </ProductsProvider>
     </AuthProvider>
   </React.StrictMode>
 );

@@ -6,6 +6,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   variant,
   type = 'button',
   children,
+  disabled,
   className,
   onClick,
   size,
@@ -13,6 +14,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   <Button
     variant={variant}
     type={type}
+    disabled={disabled}
     className={className}
     onClick={onClick}
     size={size}
@@ -22,22 +24,3 @@ const CustomButton: React.FC<CustomButtonProps> = ({
 );
 
 export default CustomButton;
-
-// import React from 'react';
-
-// interface ButtonProps {
-//   text: string;
-//   onClick: () => void;
-//   variant?: 'primary' | 'secondary';
-// }
-
-// const Button: React.FC<ButtonProps> = ({ text, onClick, variant = 'primary' }) => {
-//   const btnClass = variant === 'primary' ? 'btn btn-primary' : 'btn btn-secondary';
-//   return (
-//     <button className={`${btnClass} w-100`} onClick={onClick}>
-//       {text}
-//     </button>
-//   );
-// };
-
-// export default Button;

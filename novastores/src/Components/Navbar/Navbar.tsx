@@ -30,11 +30,11 @@ const NavBar = () => {
         <Container className="align-items-center">
           <Navbar.Brand href="#" className="d-flex align-items-center">
             <img
-              src="https://via.placeholder.com/40"
+              src="/assets/images/novastoreslogo.png"
               alt="Novastores Logo"
               className="me-2 text-white"
             />
-            <span className="text-white">NOVASTORES</span>
+            <span className="text-white"><strong>NOVASTORES</strong></span>
           </Navbar.Brand>
 
           {/* Search Bar */}
@@ -45,9 +45,18 @@ const NavBar = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#">Category 1</Dropdown.Item>
-                <Dropdown.Item href="#">Category 2</Dropdown.Item>
-                <Dropdown.Item href="#">Category 3</Dropdown.Item>
+                <Dropdown.Item href="#">Electronics Devices</Dropdown.Item>
+                <Dropdown.Item href="#">Computer & Laptop</Dropdown.Item>
+                <Dropdown.Item href="#">Computer Accessories</Dropdown.Item>
+                <Dropdown.Item href="#">SmartPhone</Dropdown.Item>
+                <Dropdown.Item href="#">Headphone</Dropdown.Item>
+                <Dropdown.Item href="#">Mobile Accessories</Dropdown.Item>
+                <Dropdown.Item href="#">Gaming Console</Dropdown.Item>
+                <Dropdown.Item href="#">Camera & Photo</Dropdown.Item>
+                <Dropdown.Item href="#">TV & Home Appliances</Dropdown.Item>
+                <Dropdown.Item href="#">Watches & Accessories</Dropdown.Item>
+                <Dropdown.Item href="#">GPS & Navigation</Dropdown.Item>
+                <Dropdown.Item href="#">Wearable Technology</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
 
